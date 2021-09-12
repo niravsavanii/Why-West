@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "192112445103",
+    "firebase_url": "https://whywastefood-bd6f6-default-rtdb.firebaseio.com",
+    "project_id": "whywastefood-bd6f6",
+    "storage_bucket": "whywastefood-bd6f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192112445103:android:3050728144417fde93f65a",
+        "android_client_info": {
+          "package_name": "com.example.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxrG-qC5G8aITIE3F0pKNsaDpEwlaIBhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192112445103:android:8bdcc4b735dbd35393f65a",
+        "android_client_info": {
+          "package_name": "com.example.registration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxrG-qC5G8aITIE3F0pKNsaDpEwlaIBhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192112445103:android:364f5a89d09fc90793f65a",
+        "android_client_info": {
+          "package_name": "com.example.whywasteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxrG-qC5G8aITIE3F0pKNsaDpEwlaIBhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192112445103-5ntsg21rd7ld3p0rl7spognmr1c1s0c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

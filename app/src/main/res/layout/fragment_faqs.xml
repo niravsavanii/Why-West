@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faqs.FaqsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:fontFamily="@font/chrustyrock"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:text="FAQ's" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FFF"
+        android:alwaysDrawnWithCache="true"
+        android:dividerHeight="1dp"
+        android:horizontalSpacing="3dp"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:layout_margin="20dp"
+        android:longClickable="true"
+        android:footerDividersEnabled="true"
+        android:layout_below="@id/heading"
+        />
+
+</RelativeLayout>

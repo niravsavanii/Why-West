@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WhyWasteApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Food">Food</string>
+    <string name="Money">Money</string>
+    <string name="share_food">Do You Want To Share</string>
+    <string name="signup">SignUp</string>
+    <string name="alreadyHaveAc">Already Have An Account,</string>
+    <string name="forgotpass">Forgot your password</string>
+    <string name="dontHaveAc">Don\'t have an account, </string>
+    <string name="login">LogIn</string>
+    <string name="SelectState">Select State</string>
+
+</resources>

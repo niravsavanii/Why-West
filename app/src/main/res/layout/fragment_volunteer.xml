@@ -1,0 +1,199 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".volunteer.VolunteerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Become A Volunteer"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edittext"
+                android:hint="Full name"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/MobNo"
+                android:layout_below="@+id/nameet"
+                android:hint="Phone Number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edittext"
+                android:maxLength="10"
+                android:inputType="phone"/>
+
+            <EditText
+                android:id="@+id/Address"
+                android:hint="Address"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edittext"
+                android:textColor="@android:color/black"
+                android:inputType="textPostalAddress|textImeMultiLine"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/Area"
+                android:hint="Area"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edittext"
+                android:textColor="@android:color/black"
+                android:inputType="textPostalAddress|textImeMultiLine"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/Landmark"
+                android:hint="Landmark (Optinal)"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_edittext"
+                android:textColor="@android:color/black"
+                android:inputType="textPostalAddress|textImeMultiLine"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/State"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edittext"/>
+
+                <Spinner
+                    android:id="@+id/City"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:text="City"
+                    android:background="@drawable/shape_edittext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/FreeTime"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Free Time"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edittext"
+                    android:textColor="@android:color/black"
+                    android:inputType="text"
+                    android:layout_width="wrap_content" />
+
+                <EditText
+                    android:id="@+id/Pincode"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Pincode"
+                    android:padding="10dp"
+                    android:maxLength="6"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edittext"
+                    android:textColor="@android:color/black"
+                    android:inputType="number"
+                    android:layout_width="wrap_content" />
+
+            </LinearLayout>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/JoinVolunteer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Become A Volunteer"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_margin="8dp" />
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/RemoveFromVolunteer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Remove From Volunteer"
+                android:background="@drawable/button"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
+</ScrollView>

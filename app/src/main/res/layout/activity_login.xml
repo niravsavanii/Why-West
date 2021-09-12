@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:layout_marginTop="-430dp"
+            android:layout_below="@+id/imageButton"
+            android:textColorHint="@color/primary"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_email"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:nextFocusDown="@id/userPassword"
+                android:hint="E-mail"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Email"
+            android:textColorHint="@color/primary"
+            app:boxStrokeColor="@color/primary"
+            app:hintTextColor="@color/primary"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:nextFocusDown="@id/btn_login"
+                android:hint="Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="172dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="508dp"
+            android:src="@drawable/food"/>
+
+    <LinearLayout
+        android:id="@+id/lLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_below="@+id/forgotpwd"
+        android:gravity="center">
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            app:spinning_bar_color="@color/white"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_padding="5dp"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/forgotpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="end"
+            android:text="@string/forgotpass"
+            android:layout_below="@+id/Password"
+            android:textColor="@color/primary"
+            android:textSize="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/dontHaveAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/lLogin">
+
+        <TextView
+            android:id="@+id/lblsignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dontHaveAc"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lblsignUp"
+            android:text="@string/signup"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/chrustyrock"
+            android:textSize="15dp"
+            android:textColor="@color/primary"/>
+
+    </LinearLayout>
+
+     <TextView
+         android:id="@+id/Guest"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="100dp"
+         android:gravity="center"
+         android:text="Continue Without Login..!!!"
+         android:layout_below="@+id/dontHaveAc"></TextView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
